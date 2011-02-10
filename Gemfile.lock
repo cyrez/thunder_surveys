@@ -36,6 +36,7 @@ GEM
     bson_ext (1.0.7)
     builder (2.1.2)
     configuration (1.2.0)
+    dalli (1.0.2)
     ekuseru (0.3.8)
       spreadsheet (>= 0.6)
     erubis (2.6.6)
@@ -105,6 +106,7 @@ DEPENDENCIES
   agnostic-will_paginate
   ar_mailer_rails3 (= 2.1.9)
   bson_ext
+  dalli
   ekuseru
   fastercsv
   googlecharts

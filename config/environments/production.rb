@@ -30,4 +30,6 @@ ThunderSurvey::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
+  config.cache_store = :dalli_store
+  
 end

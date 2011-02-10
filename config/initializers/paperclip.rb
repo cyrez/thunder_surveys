@@ -1,4 +1,4 @@
-module Paperclip
+  module Paperclip
   module ClassMethods
     def has_attached_file name, options = {}
       include InstanceMethods
