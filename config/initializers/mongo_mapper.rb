@@ -10,7 +10,7 @@ if ENV['MONGOHQ_URL']
   MongoMapper.config = {RAILS_ENV => {'uri' => ENV['MONGOHQ_URL']}}
   MongoMapper.connect(RAILS_ENV)
 else
-  MongoMapper.config = {RAILS_ENV => {'uri' => 'mongodb://localhost:27017/thundersurvey'}}
+  MongoMapper.config = {RAILS_ENV => {'uri' => 'mongodb://localhost:27017/qfisurvey'}}
   MongoMapper.connect(RAILS_ENV)
 end
 

@@ -1,3 +1,3 @@
 # ThunderSurvey::Application.config.middleware.use ExceptionNotifier, :email_prefix => "[Panic] ",
-#    :sender_address => %{"Noreply" <noreply@thundersurvey.com>},
-#    :exception_recipients => %w{zhangyuanyi@gmail.com} if Rails.env == 'production'
+#    :sender_address => %{"Noreply" <noreply@qfiteachers.net>},
+#    :exception_recipients => %w{cgblow@gmail.com} if Rails.env == 'production'
