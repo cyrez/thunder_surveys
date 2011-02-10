@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   protected
   def token_expired
-    flash[:notice] = "对不起，您的会话已超时"
+    flash[:notice] = "Expired!"
     respond_to do |accepts|
       accepts.html do
         store_location
@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
 
   def set_time_zone_and_locale
     Time.zone = current_user.time_zone if logged_in?    
-    I18n.locale = session[:locale] || 'zh-CN'
+    I18n.locale = session[:locale] || 'en'
   end
   
   def set_section(section)
@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
     @edit_key = params[:edit_key]
     
     if @form.nil? || @form.edit_key != @edit_key
-      flash[:notice] = "对不起，您没有权限操作此表单"
+      flash[:notice] = "Sorry!"
       redirect_to '/'
     end
   end

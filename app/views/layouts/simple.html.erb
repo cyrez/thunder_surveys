@@ -1,5 +1,5 @@
 <!doctype html>      
-<html lang="zh">
+<html lang="en">
 <head>
   <link rel="shortcut icon" href="/favicon.ico" />
   <meta name="description" content="<%= @form.nil? ?  "ThunderSurvey is the simplest free online survey solution, if you perfer to clean and simple survey design, then thundersurvey should be your first choice." : @form.description %>" />
@@ -25,13 +25,13 @@
     }
   </style>
   <%= yield :headers %>                                                   
-  <title>Thunder Survey－<%= @form.nil? ? (@page_title||'Free online survey solution.') : @form.title %></title>
+  <title><%= @form.nil? ? (@page_title||'Survey') : @form.title %></title>
 </head>
 
 <body>     
   <div class='header'>
     <div class="logo" style='margin:6px 10px'>
-      <span style="color:#2c87E5;font-size:14px;">抢答</span>
+      <span style="color:#2c87E5;font-size:14px;">Responder</span>
     </div>         
     <div id="saving" style="display:none;"><%= t(:saving) %></div> 
     <%= render :partial => '/shared/notice' %>

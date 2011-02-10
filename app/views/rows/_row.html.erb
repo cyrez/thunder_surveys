@@ -1,6 +1,6 @@
 <% unless form.nil? %>       
 <div style='text-align:right;'>
-      <%= link_to '编辑', '#', :onclick => "edit_row('#{@form.id}', '#{row.id}', '#{@form.edit_key}')", :class => 'ag' %> |  <%= link_to '删除', form_row_path(form, row, :edit_key => form.edit_key), :confirm => '你确定删除此记录嘛?', :method => 'delete', :class => 'ag' %>    
+      <%= link_to 'Edit', '#', :onclick => "edit_row('#{@form.id}', '#{row.id}', '#{@form.edit_key}')", :class => 'ag' %> |  <%= link_to 'Delete', form_row_path(form, row, :edit_key => form.edit_key), :confirm => 'Are you sure?', :method => 'delete', :class => 'ag' %>    
  </div>  
  <div id="result" >
    <div class='span-10'>

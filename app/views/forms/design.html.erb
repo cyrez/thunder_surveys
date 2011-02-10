@@ -43,14 +43,13 @@
    
   <div id="form" >
     <%= form_for(@form, :url => form_path(@form, :edit_key => @form.edit_key), :html => {:multipart => true,:id => 'edit_form',:method => 'put',:remote => true,:style => 'margin:10px 0;'}) do |f| %>
-        <p><b>表单标识:</b><br /><%=f.text_field :logo,:size => 60 %><br />
-           <span class='tip'>表单标识的文件地址(如http://xxx.com/logo.jpg)</span>
+        <p><b>Form:</b><br /><%=f.text_field :logo,:size => 60 %><br />
         </p>    
         <div id='themes'>
-          <b>主题</b>
+          <b>Topics</b>
           <ul>
             <% (0..9).each do |count|%>
-            <li><%=link_to '预览',form_path(@form,:preview_theme => count),:target => '_blank'%><br /><%=image_tag("themes/theme#{count}.jpg")%><br /><%=f.radio_button(:theme,count)%> </li>
+            <li><%=link_to 'Preview',form_path(@form,:preview_theme => count),:target => '_blank'%><br /><%=image_tag("themes/theme#{count}.jpg")%><br /><%=f.radio_button(:theme,count)%> </li>
             <% end %>
           <ul>     
           <div style='clear:both;'></div>

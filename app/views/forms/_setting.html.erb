@@ -1,6 +1,6 @@
 <%= form_for(@form, :url => form_path(@form, :edit_key => @edit_key), :html => {:id => 'edit_form', :method => 'put'}, :remote => true) do |f| %>
   <%#= f.error_messages %> 
-  <!-- 表单头 -->
+  <!-- 表单头 First form -->
   <div id="form_header">
      <%= render :partial => 'form', :object => f %>
   </div>  
@@ -10,7 +10,7 @@
   <div style='clear:both;'></div>  
 <% end %> 
 
-<!-- 表单通知设定 -->
+<!-- 表单通知设定 Notification settings form -->
 <div style="display:none;" id="notify_setting" class='dialog'> 
   <%= form_for(@form, :url => form_path(@form, :edit_key => @edit_key, :mod => 'dialog'),:html => {:class => 'setting_form'}, :remote => true) do |f| -%> 
   
@@ -33,7 +33,7 @@
   <% end -%>
 </div>
 
-<!-- 表单密码设定 -->
+<!-- 表单密码设定 Set form password -->
 <div style="display:none;" id="password_setting" class='dialog'> 
   <%= form_for(@form, :url => form_path(@form, :edit_key => @edit_key, :mod => 'dialog'),:html => {:class => 'setting_form'}, :remote => true) do |f| -%> 
   

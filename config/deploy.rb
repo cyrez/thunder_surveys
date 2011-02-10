@@ -8,7 +8,7 @@ set :scm, :git
 set :deploy_via, :remote_cache
 
 @domain = domain rescue nil
-set :domain, 'f.51qiangzuo.com' unless @domain
+set :domain, 'meedan-survey.heroku.com' unless @domain
 
 role :app, domain, :primary => true
 role :web, domain

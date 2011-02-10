@@ -20,7 +20,7 @@ class Form
   key :password, String, :default => ''
   key :end_at, Date, :default => nil
   key :logo, String
-  key :locale, String, :default => 'zh-CN'
+  key :locale, String, :default => 'en'
   key :theme,Integer,:default => 0
   key :rows_count, Integer, :default => 0
   key :maximum_rows, Integer
