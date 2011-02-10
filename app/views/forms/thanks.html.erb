@@ -11,8 +11,10 @@
   </p>
 </div>
   <% if @form.publish_response %>
-    <h2><%=@form.rows_count%>个回应</h2> 
+    <h2><%=@form.rows_count%>Responses</h2> 
     <%= render :partial => 'chart',:collection => @form.fields,:as => :field,:locals => {:count => false} %>  
   <% end %>
-  <div id='guide'><%=link_to t(:back_to_survey),form_path(@form),:class => 'ag'%> | <%=link_to t(:create_survey),forms_path,:class => 'ag'%></div> 
+  
+  
+  <p class="notice">You can now close this window.</p>
 </div>
