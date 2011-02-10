@@ -1,6 +1,6 @@
 class Mailer < ActionMailer::Base
   layout 'email'
-  default :from => "ThunderSurvey <noreply@thundersurvey.com>", :content_type => "text/html",
+  default :from => "Surveys <noreply@surveys.com>", :content_type => "text/html",
             :charset => "utf-8",:content_transfer_encoding => '8bit'
   
   def registrant_notification(form, row)
