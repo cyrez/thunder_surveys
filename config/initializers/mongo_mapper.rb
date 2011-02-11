@@ -9,13 +9,14 @@ logger = Logger.new('log/development.log')
 if ENV['MONGOHQ_URL']
   MongoMapper.config = {RAILS_ENV => {'uri' => ENV['MONGOHQ_URL']}}
   MongoMapper.connect(RAILS_ENV)
-  
-elsif ENV['MONGO_URL']
-  MongoMapper.config = {RAILS_ENV => {'uri' => ENV['MONGO_URL']}}
-  MongoMapper.connect(RAILS_ENV)
-  
-else
-  MongoMapper.config = {RAILS_ENV => {'uri' => 'mongodb://localhost:27017/meedan-qfi-surveys'}}
-  MongoMapper.connect(RAILS_ENV)
+
+  # elsif ENV['MONGO_URL']
+  #   MongoMapper.config = {RAILS_ENV => {'uri' => ENV['MONGO_URL']}}
+  #   MongoMapper.connect(RAILS_ENV)  
+
+  # else
+  #   MongoMapper.config = {RAILS_ENV => {'uri' => 'mongodb://localhost:27017/meedan-qfi-surveys'}}
+  #   MongoMapper.connect(RAILS_ENV)
 end
+
 
