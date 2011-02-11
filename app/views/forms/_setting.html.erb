@@ -22,6 +22,12 @@
     <%= f.label :thanks_message, t(:thanks_message) %>
     <%= f.text_area :thanks_message, :cols => 42, :rows => 3, :style => "width:350px;height:50px;" %>
   </p>  
+  
+  <p>
+    <%= f.label :tool_tag, "Tool Tag" %>
+    <%= f.text_area :tool_tag, :cols => 42, :rows => 3, :style => "width:350px;height:50px;" %>
+  </p>
+  
   <p>
     <%= f.check_box :publish_response,:value => false %> <b><%= t(:make_results_public) %></b>
   </p>

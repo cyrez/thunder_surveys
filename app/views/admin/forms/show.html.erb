@@ -10,6 +10,7 @@
     </tr>
   </thead>
   <tbody>  
+    
  <% @rows.each do |row| %>
   <tr id="<%=row.id%>">     
     <td><div class='info_item time'><%=row.created_at.to_time.to_formatted_s(:datetime_short)%></div></td>          

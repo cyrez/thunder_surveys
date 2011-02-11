@@ -29,7 +29,7 @@ class Form
   key :logo,String
   key :created_at, Time, :default => Time.now
   key :updated_at, Time, :default => Time.now
-  
+  key :tool_tag, String, :default => "untagged"
   many :fields, :default => 0     
     
   before_create :make_edit_key
