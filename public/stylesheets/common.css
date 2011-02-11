@@ -234,3 +234,9 @@ table.grid tbody td.opt a {
 	margin:10px;
 	text-align:center;
 }
+span.form_id {
+  color: #c3c3c3;
+  font-size: 10px;
+  padding-left: 47px;
+}
+
