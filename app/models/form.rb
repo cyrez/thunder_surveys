@@ -30,7 +30,9 @@ class Form
   key :created_at, Time, :default => Time.now
   key :updated_at, Time, :default => Time.now
   key :tool_tag, String, :default => "untagged"
-  many :fields, :default => 0     
+  key :form_style, String, :default => "familiar"
+  many :fields, :default => 0
+  
     
   before_create :make_edit_key
   before_save   :update_timestamps  

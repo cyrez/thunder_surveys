@@ -1,4 +1,5 @@
 <%= form_for(@form, :url => form_path(@form, :edit_key => @edit_key), :html => {:id => 'edit_form', :method => 'put'}, :remote => true) do |f| %>
+
   <%#= f.error_messages %> 
   <!-- 表单头 First form -->
   <div id="form_header">
@@ -14,6 +15,16 @@
 <div style="display:none;" id="notify_setting" class='dialog'> 
   <%= form_for(@form, :url => form_path(@form, :edit_key => @edit_key, :mod => 'dialog'),:html => {:class => 'setting_form'}, :remote => true) do |f| -%> 
   
+   <p>
+      <%= f.label :tool_tag, "Tool" %>
+      <%= f.select :tool_tag, [['Alif Baa','tool_alif_baa'], ['YouTube','tool_youtube'], ['Rubicon Atlas','tool_atlas'], ['LiveMocha','tool_livemocha'], ['Rosetta Stone','tool_rosetta_stone'], ["None", 'none']] %>
+    </p>
+
+    <p>
+      <%= f.label :form_style, "Survey Style" %>
+      <%= f.select :form_style, [['Familiar with a tool','familiar'], ['Unfamiliar with it','unfamiliar'], ['General questions','general']] %>
+    </p>
+    
   <p id="email_notify">
     <%= f.check_box :email_notify %> <b><%= t(:send_email_when_receive_new_answer) %></b>
   </p>
@@ -22,11 +33,6 @@
     <%= f.label :thanks_message, t(:thanks_message) %>
     <%= f.text_area :thanks_message, :cols => 42, :rows => 3, :style => "width:350px;height:50px;" %>
   </p>  
-  
-  <p>
-    <%= f.label :tool_tag, "Tool Tag" %>
-    <%= f.text_area :tool_tag, :cols => 42, :rows => 3, :style => "width:350px;height:50px;" %>
-  </p>
   
   <p>
     <%= f.check_box :publish_response,:value => false %> <b><%= t(:make_results_public) %></b>

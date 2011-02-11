@@ -17,8 +17,6 @@ class FormsController < ApplicationController
   def show
     if params[:id]
       @form = Form.find(params[:id]) rescue nil
-    elsif params[:tool_tag]
-      @form = Form.find(params[:tool_tag]) rescue nil
     end
     
     @theme = params[:preview_theme].nil? ? @form.theme : params[:preview_theme]       

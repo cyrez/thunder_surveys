@@ -122,6 +122,7 @@ a{color:#3F6A97;text-decoration:none;}
 	border:1px solid #3D88CF;
 	text-decoration: none; 
 	padding:3px 5px;
+	font-size: 12px;
 }       
 
 a.ag:hover {
@@ -183,7 +184,8 @@ table.grid tbody td {
 } 
 
 table.big{
-	width:100%;
+  width: 1000px !important;
+	margin: 0 auto;
 }
 
 table.big tbody td {  
