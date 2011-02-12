@@ -1,5 +1,5 @@
 <!doctype html>      
-<html lang="zen">
+<html lang="en">
 <head>
   <link rel="shortcut icon" href="/favicon.ico" />
   <meta name="description" content="<%= @form.nil? ?  "" : @form.description %>" />
@@ -11,10 +11,10 @@
   <%= javascript_include_tag 'jquery', 'jquery-ui', 'jrails', 'rails', 'application', :cache => 'public.cache' %>      
   <%= stylesheet_link_tag "themes/theme#{@theme}" %> 
   <%= yield :headers %>                                                   
-  <title>QFI Surveys <%= @form.nil? ? (@page_title||'Free online survey solution.') : @form.title %></title>
+  <title>QFI Surveys <%= @form.nil? ? (@page_title||'') : @form.title %></title>
   
   <script type="text/javascript" charset="utf-8">
-    $(document).ready(function(){     
+    $(document).ready(function(){
       $("input[type='text']").addClass("text_input")
     })        
   </script> 
@@ -23,19 +23,19 @@
 <body>
   <div id="form_container">
     <div id='form_header'>
-      <div id='form_top'>    
+      <!-- <div id='form_top'>    
         <%=image_tag @form.logo unless @form.logo.blank? %>
         <% if @form.total_page > 1 %>
-          <p class='paginaion'>第<%= @page %>页/共<%= @form.total_page %>页</p>
+          <p class='paginaion'>-x-<%= @page %>-o-<%= @form.total_page %>-z-</p>
         <% end %>
         <div style='clear:both;'></div>
-      </div>
-      <h1 class='title'><%=h @form.title %></h1>   
-      <div class='desc'>
-        <%=simple_format raw(@form.description) %>
-      </div>
+      </div> -->
+      <!-- <div class='desc'>
+        <%#=simple_format raw(@form.description) %>
+      </div> -->
     </div>
-    <div id='form_contetn'> 
+    <div id='form_content'> 
+      <h3 class='title'><%=h @form.title %></h3>   
     <%= yield %>     
     </div> 
     <div style="clear:both;"></div>
