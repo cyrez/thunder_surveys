@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* line 7, ../../../compass/src/common.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../../../compass/src/common.scss */
+img {
+  border: 0;
+}
+
+/* line 16, ../../../compass/src/common.scss */
+p {
+  margin: 10px 0;
+}
+
+/* line 20, ../../../compass/src/common.scss */
+h1, h2, h3, h4 {
+  color: #666;
+}
+
+/* line 24, ../../../compass/src/common.scss */
+h3 {
+  padding: 5px 0px;
+  border-bottom: 1px solid #E1E8F0;
+}
+
+/* line 29, ../../../compass/src/common.scss */
+header, section, footer {
+  display: block;
+}
+
+/* line 33, ../../../compass/src/common.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 37, ../../../compass/src/common.scss */
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* line 43, ../../../compass/src/common.scss */
+.submit {
+  height: 26px;
+  width: 100px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border: 0 none;
+  margin-left: 10px;
+  background-color: green;
+  color: #fff;
+}
+
+/* line 55, ../../../compass/src/common.scss */
+abbr {
+  color: #cc0000;
+  padding-top: .2em;
+}
+
+/* line 57, ../../../compass/src/common.scss */
+form label {
+  font-size: 18px;
+  display: inline;
+}
+
+/* line 62, ../../../compass/src/common.scss */
+.text_input {
+  width: 250px;
+  height: 15px;
+}
+
+/* line 67, ../../../compass/src/common.scss */
+div.qustion_label {
+  margin-bottom: 10px;
+}
+
+/* line 71, ../../../compass/src/common.scss */
+div.question p {
+  margin: 5px 0;
+}
+
+/* ---- page nav ----*/
+/* line 78, ../../../compass/src/common.scss */
+#page_nav {
+  height: 20px;
+  padding: 5px 10px 15px 0px;
+  margin: 0px 0px 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+/* line 85, ../../../compass/src/common.scss */
+#page_nav span {
+  float: left;
+  color: #333;
+  font-size: 1.9em;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+/* line 93, ../../../compass/src/common.scss */
+.page_guide {
+  height: 12px;
+  padding: 10px 0;
+}
+
+/* line 98, ../../../compass/src/common.scss */
+#page {
+  margin: 10px 40px;
+}
+
+/* line 102, ../../../compass/src/common.scss */
+#preview {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #FFCC00;
+  background: #FFFF99;
+}
+
+/* line 109, ../../../compass/src/common.scss */
+#footer {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+/* line 114, ../../../compass/src/common.scss */
+#footer a {
+  color: #999;
+}
+
+/* line 118, ../../../compass/src/common.scss */
+#footer span {
+  color: #999999;
+}
+
+/* line 123, ../../../compass/src/common.scss */
+a {
+  color: #3F6A97;
+  text-decoration: none;
+}
+
+/* line 125, ../../../compass/src/common.scss */
+.ag:link {
+  color: #fff;
+  background: #79B0F3;
+  border: 1px solid #3D88CF;
+  text-decoration: none;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+/* line 134, ../../../compass/src/common.scss */
+a.ag:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #0099FF;
+}
+
+/* line 139, ../../../compass/src/common.scss */
+.ag:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 144, ../../../compass/src/common.scss */
+.ag:visited {
+  color: #fff;
+  background: #79B0F3;
+  border: 1px solid #3D88CF;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+/*  huizong */
+/* line 154, ../../../compass/src/common.scss */
+#huizong {
+  width: 100%;
+}
+
+/* line 158, ../../../compass/src/common.scss */
+#huizong td {
+  text-align: center;
+}
+
+/* line 162, ../../../compass/src/common.scss */
+#huizong .percentage {
+  display: block;
+  float: left;
+  background: green;
+  margin-right: 5px;
+}
+
+/* line 169, ../../../compass/src/common.scss */
+.chart {
+  background: url(/images/icons/stats.png) no-repeat top left;
+  padding-left: 16px;
+}
+
+/*  grid table */
+/* line 176, ../../../compass/src/common.scss */
+table.grid thead tr th, table.grid tfoot tr th {
+  border-bottom: 1px solid #E3E3E3;
+  border-top: 1px solid #E3E3E3;
+  background: #F4F8FF;
+  color: #0054B4;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 186, ../../../compass/src/common.scss */
+table.grid tbody td {
+  color: #666;
+  vertical-align: top;
+  border-bottom: 1px solid #efefef;
+}
+
+/* line 192, ../../../compass/src/common.scss */
+table.big {
+  width: 1000px !important;
+  margin: 0 auto;
+}
+
+/* line 197, ../../../compass/src/common.scss */
+table.big tbody td {
+  color: #6B7C70;
+  padding: 5px;
+  vertical-align: top;
+  border-bottom: 1px solid #efefef;
+}
+
+/* line 204, ../../../compass/src/common.scss */
+.tablenav {
+  margin: 10px;
+  text-align: center;
+}
+
+/* line 209, ../../../compass/src/common.scss */
+table.grid td.title a {
+  color: #0099FF;
+}
+
+/* line 213, ../../../compass/src/common.scss */
+table.grid td.title span {
+  margin-left: 10px;
+  padding: 0;
+  color: #999999;
+}
+
+/* line 219, ../../../compass/src/common.scss */
+table.grid tbody td.opt a {
+  margin-right: 10px;
+}
+
+/* line 223, ../../../compass/src/common.scss */
+#spinner {
+  display: none;
+}
+
+/* line 227, ../../../compass/src/common.scss */
+.box .title {
+  color: #666;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+/* line 233, ../../../compass/src/common.scss */
+.name {
+  font-weight: bold;
+  color: #024373;
+  margin-left: 10px;
+}
+
+/* line 239, ../../../compass/src/common.scss */
+.paginate {
+  margin: 10px;
+  text-align: center;
+}
+
+/* line 243, ../../../compass/src/common.scss */
+span.form_id {
+  color: #c3c3c3;
+  font-size: 10px;
+  padding-left: 47px;
+}

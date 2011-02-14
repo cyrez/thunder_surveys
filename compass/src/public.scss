@@ -1,0 +1,90 @@
+
+
+body{
+	font-family: arial, sans-serif;
+	font-size:14px;     
+	color:#333; 
+}
+
+/*  ------ form show cotainer -------- */
+
+
+#form_container{ 
+	margin:10px auto;
+	width:600px;
+	background-color:#FFFFFF;
+}
+
+.field {
+}     
+
+.question{
+	 padding:10px;      
+}
+
+.desc{
+	padding:0 10px;
+	font-size:12px;
+}
+
+.desc p{           
+	margin:0;
+	padding:10px;  
+}
+
+.error{
+   color:red;
+}      
+
+form label{  
+	font-weight:bold;
+}
+
+.support{ 
+	display:block;
+	padding:20px; 
+	color:#777;
+	text-align:center;
+	text-decoration: none;   
+}
+
+.prompt{
+	color:#777;
+	font-size:13px;  
+	display:block;
+	padding-top:3px;
+}
+
+#form_header h1{   
+	padding:15px;
+	font-size:24px;
+	display: none;
+}   
+
+#form_top{
+}
+
+#from_top img{
+	float:left;
+}
+#form_top .paginaion{
+	width:200px;
+	text-align:right;
+	float:right;
+}
+
+#form_content{
+	padding:20px;
+}
+
+h3{
+	font-size:12px;
+	font-family:arial;
+}
+
+
+#guide{        
+	display:block;
+	margin:10px;
+	text-align:center;
+}
