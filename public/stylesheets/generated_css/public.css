@@ -8,39 +8,37 @@ body {
 /*  ------ form show cotainer -------- */
 /* line 12, ../../../compass/src/public.scss */
 #form_container {
-  margin: 10px auto;
-  width: 600px;
   background-color: #FFFFFF;
 }
 
-/* line 21, ../../../compass/src/public.scss */
+/* line 19, ../../../compass/src/public.scss */
 .question {
   padding: 10px;
 }
 
-/* line 25, ../../../compass/src/public.scss */
+/* line 23, ../../../compass/src/public.scss */
 .desc {
   padding: 0 10px;
   font-size: 12px;
 }
 
-/* line 30, ../../../compass/src/public.scss */
+/* line 28, ../../../compass/src/public.scss */
 .desc p {
   margin: 0;
   padding: 10px;
 }
 
-/* line 35, ../../../compass/src/public.scss */
+/* line 33, ../../../compass/src/public.scss */
 .error {
   color: red;
 }
 
-/* line 39, ../../../compass/src/public.scss */
+/* line 37, ../../../compass/src/public.scss */
 form label {
   font-weight: bold;
 }
 
-/* line 43, ../../../compass/src/public.scss */
+/* line 41, ../../../compass/src/public.scss */
 .support {
   display: block;
   padding: 20px;
@@ -49,7 +47,7 @@ form label {
   text-decoration: none;
 }
 
-/* line 51, ../../../compass/src/public.scss */
+/* line 49, ../../../compass/src/public.scss */
 .prompt {
   color: #777;
   font-size: 13px;
@@ -57,37 +55,37 @@ form label {
   padding-top: 3px;
 }
 
-/* line 58, ../../../compass/src/public.scss */
+/* line 56, ../../../compass/src/public.scss */
 #form_header h1 {
   padding: 15px;
   font-size: 24px;
   display: none;
 }
 
-/* line 67, ../../../compass/src/public.scss */
+/* line 65, ../../../compass/src/public.scss */
 #from_top img {
   float: left;
 }
 
-/* line 70, ../../../compass/src/public.scss */
+/* line 68, ../../../compass/src/public.scss */
 #form_top .paginaion {
   width: 200px;
   text-align: right;
   float: right;
 }
 
-/* line 76, ../../../compass/src/public.scss */
+/* line 74, ../../../compass/src/public.scss */
 #form_content {
   padding: 20px;
 }
 
-/* line 80, ../../../compass/src/public.scss */
+/* line 78, ../../../compass/src/public.scss */
 h3 {
   font-size: 12px;
   font-family: arial;
 }
 
-/* line 86, ../../../compass/src/public.scss */
+/* line 84, ../../../compass/src/public.scss */
 #guide {
   display: block;
   margin: 10px;
