@@ -16,3 +16,5 @@ gem "nokogiri"
 
 gem "ekuseru"
 gem "fastercsv"
+gem "heroku"
+gem 'dalli'

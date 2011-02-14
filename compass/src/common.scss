@@ -1,4 +1,10 @@
-*{
+
+@import "compass";
+@import "compass/utilities";
+@import "compass/css3";
+@import "compass/css3/border-radius";
+
+* {
 	margin:0;
 	padding:0;
 }            
@@ -12,13 +18,11 @@ p{
 }   
 
 h1,h2,h3,h4{ 
-	color:#666;
-	font-family: 'Microsoft YaHei' '微软雅黑' '雅黑' arial '宋体';  
+	color:#666;	
 }
 
 h3{
-	padding:5px 0px;   
-	font-size:14px;
+	padding: 5px 0px;   
 	border-bottom:1px solid #E1E8F0;
 }
 
@@ -31,29 +35,27 @@ ul li{
 }
 
 body{       
-	font-family:Arial, sans-serif;
-	font-size:12px;     
+	font-family: 'Helvetica Neue', 'Arial', sans-serif;  
+	font-size:16px;     
 	color:#333; 
-	background:url(/images/bg/header.jpg) repeat-x #FDFDFD;
 }                    
 
-.submit{
-	background: url(/images/bg/btn-short.png);     
+.submit {
 	height:26px;
 	width:100px;
 	color: #fff;
-	font-size:12px;
-	letter-spacing:4px;
 	cursor: pointer;  
 	margin-bottom:5px;
 	border:0 none; 
-	margin-left:10px;     
+	margin-left:10px;
+	background-color: green;
+	color: #fff;
 }
 
 abbr{ color:#cc0000;padding-top:.2em;}
 
 form label{
-	font-size:13px;
+	font-size:18px;
 	display:inline;
 }  
 
@@ -76,7 +78,6 @@ div.question p{
 #page_nav{
 	height:20px;
  	padding:5px 10px 15px 0px;  
-  *padding:5px 10px 0px 0px;
 	margin:0px 0px 15px;   
 	border-bottom:1px solid #efefef;    
 }
@@ -99,7 +100,7 @@ div.question p{
 }
 
 #preview{     
-	font-size:14px;
+	font-size:18px;
 	padding:10px;     
 	border:1px solid #FFCC00;
 	background:#FFFF99;
@@ -115,7 +116,6 @@ div.question p{
 } 
 
 #footer span{
-	font-size:10px;
 	color:#999999;
 }    
 
@@ -127,8 +127,8 @@ a{color:#3F6A97;text-decoration:none;}
 	background:#79B0F3;
 	border:1px solid #3D88CF;
 	text-decoration: none; 
-	font-size:10px;
 	padding:3px 5px;
+	font-size: 12px;
 }       
 
 a.ag:hover {
@@ -146,7 +146,6 @@ a.ag:hover {
 	background:#79B0F3;
 	border:1px solid #3D88CF;
 	text-decoration: none; 
-	font-size:10px;
 	padding:3px 5px;
 }
 
@@ -179,7 +178,6 @@ table.grid thead tr th, table.grid tfoot tr th {
 	border-top:1px solid #E3E3E3; 
 	background:#F4F8FF;
 	color:#0054B4;
-	font-size: 12px;  
 	font-weight:bold;
 	padding: 5px;  
 	text-align:center;
@@ -192,7 +190,8 @@ table.grid tbody td {
 } 
 
 table.big{
-	width:100%;
+  width: 1000px !important;
+	margin: 0 auto;
 }
 
 table.big tbody td {  
@@ -209,8 +208,6 @@ table.big tbody td {
 
 table.grid td.title a{  
 	color:#0099FF;
-	font-family:'微软雅黑' arial '宋体';   
-	font-size:14px;
 } 
 
 table.grid td.title span{
@@ -230,7 +227,6 @@ table.grid tbody td.opt a {
 .box .title{
 	color:#666;
 	padding:10px 0;
-	font-size:14px;
 	font-weight:bold;
 }
 
@@ -244,3 +240,9 @@ table.grid tbody td.opt a {
 	margin:10px;
 	text-align:center;
 }
+span.form_id {
+  color: #c3c3c3;
+  font-size: 10px;
+  padding-left: 47px;
+}
+

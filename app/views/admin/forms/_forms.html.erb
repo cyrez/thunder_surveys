@@ -7,10 +7,11 @@
   <thead>   
     <tr>    
       <th>Title</th>
-      <th>Ansers</th>
+      <th>Answers</th>
       <th>Last Update</th>
       <th>User</th>
       <th>Option</th>
+      <th>Tool</th>
     </tr>
   </thead>
   <tbody>  
@@ -22,6 +23,7 @@
         <td><%= form.updated_at.strftime("%m/%d %H:%M") %></td>
         <td><%=link_to truncate(form.user.login,:length => 10),admin_user_path(form.user) %></td>            
         <td><%=link_to 'View', form_path(form), :target => '_blank' %> | <%= recommand_link(form) %> | <%=link_to('Delete',admin_form_path(form), :method => :delete) %></td>   
+        <td><%= form.tool_tag %></td>
       </tr>
     <% end -%>                                              
   </tbody>

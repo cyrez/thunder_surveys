@@ -1,0 +1,93 @@
+/* line 3, ../../../compass/src/public.scss */
+body {
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/*  ------ form show cotainer -------- */
+/* line 12, ../../../compass/src/public.scss */
+#form_container {
+  background-color: #FFFFFF;
+}
+
+/* line 19, ../../../compass/src/public.scss */
+.question {
+  padding: 10px;
+}
+
+/* line 23, ../../../compass/src/public.scss */
+.desc {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+/* line 28, ../../../compass/src/public.scss */
+.desc p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* line 33, ../../../compass/src/public.scss */
+.error {
+  color: red;
+}
+
+/* line 37, ../../../compass/src/public.scss */
+form label {
+  font-weight: bold;
+}
+
+/* line 41, ../../../compass/src/public.scss */
+.support {
+  display: block;
+  padding: 20px;
+  color: #777;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 49, ../../../compass/src/public.scss */
+.prompt {
+  color: #777;
+  font-size: 13px;
+  display: block;
+  padding-top: 3px;
+}
+
+/* line 56, ../../../compass/src/public.scss */
+#form_header h1 {
+  padding: 15px;
+  font-size: 24px;
+  display: none;
+}
+
+/* line 65, ../../../compass/src/public.scss */
+#from_top img {
+  float: left;
+}
+
+/* line 68, ../../../compass/src/public.scss */
+#form_top .paginaion {
+  width: 200px;
+  text-align: right;
+  float: right;
+}
+
+/* line 74, ../../../compass/src/public.scss */
+#form_content {
+  padding: 20px;
+}
+
+/* line 78, ../../../compass/src/public.scss */
+h3 {
+  font-size: 12px;
+  font-family: arial;
+}
+
+/* line 84, ../../../compass/src/public.scss */
+#guide {
+  display: block;
+  margin: 10px;
+  text-align: center;
+}

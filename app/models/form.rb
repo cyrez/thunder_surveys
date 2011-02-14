@@ -20,7 +20,7 @@ class Form
   key :password, String, :default => ''
   key :end_at, Date, :default => nil
   key :logo, String
-  key :locale, String, :default => 'zh-CN'
+  key :locale, String, :default => 'en'
   key :theme,Integer,:default => 0
   key :rows_count, Integer, :default => 0
   key :maximum_rows, Integer
@@ -29,8 +29,10 @@ class Form
   key :logo,String
   key :created_at, Time, :default => Time.now
   key :updated_at, Time, :default => Time.now
+  key :tool_tag, String, :default => "untagged"
+  key :form_style, String, :default => "familiar"
+  many :fields, :default => 0
   
-  many :fields, :default => 0     
     
   before_create :make_edit_key
   before_save   :update_timestamps  

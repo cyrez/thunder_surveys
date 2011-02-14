@@ -1,20 +1,20 @@
 <!doctype html>      
-<html lang="zh">
+<html lang="en">
 <head>
   <link rel="shortcut icon" href="/favicon.ico" />
-  <meta name="description" content="<%= @form.nil? ?  "ThunderSurvey is the simplest free online survey solution, if you perfer to clean and simple survey design, then thundersurvey should be your first choice." : @form.description %>" />
+  <meta name="description" content="<%= @form.nil? ?  "" : @form.description %>" />
   <meta name='viewport' content='width=device-width' />
   <meta charset="utf-8" />
   <meta name="csrf-token" content="<%= form_authenticity_token %>" />
   <meta name="csrf-param" content="authenticity_token" />               
-  <%= stylesheet_link_tag 'framework/reset','framework/general','framework/grid','common',"public", :cache => 'public.cache' %>
+  <%= stylesheet_link_tag 'framework/reset','framework/general','framework/grid','generated_css/common',"generated_css/public", :cache => 'public.cache' %>
   <%= javascript_include_tag 'jquery', 'jquery-ui', 'jrails', 'rails', 'application', :cache => 'public.cache' %>      
   <%= stylesheet_link_tag "themes/theme#{@theme}" %> 
   <%= yield :headers %>                                                   
-  <title>ThunderSurvey－<%= @form.nil? ? (@page_title||'Free online survey solution.') : @form.title %></title>
+  <title>QFI Surveys <%= @form.nil? ? (@page_title||'') : @form.title %></title>
   
   <script type="text/javascript" charset="utf-8">
-    $(document).ready(function(){     
+    $(document).ready(function(){
       $("input[type='text']").addClass("text_input")
     })        
   </script> 
@@ -23,22 +23,21 @@
 <body>
   <div id="form_container">
     <div id='form_header'>
-      <div id='form_top'>    
+      <!-- <div id='form_top'>    
         <%=image_tag @form.logo unless @form.logo.blank? %>
         <% if @form.total_page > 1 %>
-          <p class='paginaion'>第<%= @page %>页/共<%= @form.total_page %>页</p>
+          <p class='paginaion'>-x-<%= @page %>-o-<%= @form.total_page %>-z-</p>
         <% end %>
         <div style='clear:both;'></div>
-      </div>
-      <h1 class='title'><%=h @form.title %></h1>   
-      <div class='desc'>
-        <%=simple_format raw(@form.description) %>
-      </div>
+      </div> -->
+      <!-- <div class='desc'>
+        <%#=simple_format raw(@form.description) %>
+      </div> -->
     </div>
-    <div id='form_contetn'> 
+    <div id='form_content'> 
+      <h3 class='title'><%=h @form.title %></h3>   
     <%= yield %>     
     </div> 
-    <p class='support'><%= raw t(:powered_by) %></p>
     <div style="clear:both;"></div>
   </div> 
 </body>

@@ -1,23 +1,16 @@
+
+
 body{
 	font-family: arial, sans-serif;
-	font-size:12px;     
+	font-size:14px;     
 	color:#333; 
-  	background:url(/images/bg/bg.png);
 }
 
 /*  ------ form show cotainer -------- */
 
-#form_container{ 
-	margin:20px auto;
-	width:45em;
-	moz-border-radius:5px 5px 5px 5px;
-	-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);
-	background-color:#FFFFFF;
-	border:1px solid #CCCCCC;
-}
 
-#form_container form {
-	margin: 10px;
+#form_container{ 
+	background-color:#FFFFFF;
 }
 
 .field {
@@ -25,7 +18,7 @@ body{
 
 .question{
 	 padding:10px;      
-}                       
+}
 
 .desc{
 	padding:0 10px;
@@ -61,13 +54,12 @@ form label{
 }
 
 #form_header h1{   
-	padding:15px;   
-	font-family: 'Microsoft YaHei' '微软雅黑' '雅黑' arial '宋体'; 
+	padding:15px;
 	font-size:24px;
+	display: none;
 }   
 
 #form_top{
-	padding:10px;
 }
 
 #from_top img{
@@ -79,7 +71,7 @@ form label{
 	float:right;
 }
 
-#form_contetn{
+#form_content{
 	padding:20px;
 }
 
