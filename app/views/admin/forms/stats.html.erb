@@ -6,7 +6,7 @@
     <h4>Access Statistics (past month)</h4>
     <img src="<%= Gchart.line(:axis_with_labels => 'x,y',
                 :axis_labels => @axis_labels, 
-                :title => "总计: #{Visit.count(:created_at.gt => 1.month.ago.utc, :form_id => @form.id)}",
+                :title => "#{Visit.count(:created_at.gt => 1.month.ago.utc, :form_id => @form.id)}",
                 :data => @data,
                 :bg => 'FDFDFD',
                 :width => 700,

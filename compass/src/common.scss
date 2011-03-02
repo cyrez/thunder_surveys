@@ -9,6 +9,25 @@
 	padding:0;
 }            
 
+h3.question {
+  margin-top:30px;
+  text-align: left;
+  background: url(/images/icons/stats.png) no-repeat 15px left;
+  padding-left: 30px;
+  border-top: 3px solid #000;
+}
+
+
+section.graph {
+  float: right;
+  width: 600px;
+}
+
+section.table {
+ float: left; 
+ width: 300px;
+}
+
 img{
 	border:0;
 }    
@@ -167,8 +186,7 @@ a.ag:hover {
 }
 
 .chart {
-	background: url(/images/icons/stats.png) no-repeat top left ;
-	padding-left: 16px;
+	padding: 20px;
 }
 
 /*  grid table */

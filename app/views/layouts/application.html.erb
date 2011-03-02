@@ -6,10 +6,10 @@
 <body>     
   <%= render :partial => '/shared/header' %>  
 	<div class="container">   
-      <div class='span-5 sidebar'>
+      <div class=''>
 	       <%= yield :sidebar %>
 	    </div>
-      <div class='span-19 content last'>
+      <div class='content last'>
          <%= yield %> 
       </div>
       <%= render :partial => '/shared/footer' unless controller.class == FormsController && action_name == 'edit' %>   

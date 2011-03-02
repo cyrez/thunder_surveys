@@ -1,16 +1,18 @@
 <% if field.multi? %>
-  <h3 style='text-align:left;'><%= field.name %></h3>   
-  <section class="span-10">     
+  <h3 class="question"><%= field.name %></h3>   
+  <section class="graph">     
     <% data = field.options.map {|o| @form.klass.count({"f#{field.id}" => Regexp.new('(\s|^)' + o.value + '(\s|$)')})} %>       
+
     <% if field.options.length >= 5 %>
-    <img src="<%= Gchart.bar(:data => data,:axis_with_labels => 'x,y',:axis_labels => [[0,data.max],field.options.map{|f| truncate(f.value,:length => 14)}.reverse],:orientation => 'horizontal',:bar_colors => random_color,:height => field.options.length*30) %>" />
+    <img class="bar chart" src="<%= Gchart.bar(:width => "600", :data => data,:axis_with_labels => 'x,y',:axis_labels => [[0,data.max],field.options.map{|f| f.value}.reverse],:orientation => 'horizontal',:bar_colors => random_color,:height => field.options.length*30) %>" />
     <% else %>
-    <img src="<%= Gchart.pie(
-                  :data => data, :labels => field.options.map(&:value),:bar_colors => random_color ) %>" />                                                                                              
+
+    <img class="pie chart" src="<%= Gchart.pie(
+                  :width => "550", :data => data, :labels => field.options.map{|f| truncate(f.value, :length => 25)},:bar_colors => random_color ) %>" />                                                                                              
    <% end %>                                
   </section> 
   <% if count %>
-  <section class="span-8 last">              
+  <section class="table">              
     <table class='grid' id='huizong' cellspacing="0" cellpadding="0"> 
       <col width='80%'>
       <col width='20%'>

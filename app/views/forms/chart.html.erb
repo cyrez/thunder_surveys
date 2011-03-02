@@ -16,7 +16,7 @@
       <%=link_to t(:export_to_xls),form_rows_path(@form, :format => :xls, :edit_key => @form.edit_key),:target => '_blank',:class => 'ag' %>
     </div>
   </div> 
-  <div class='span-18 prepend-top last'>     
+  <div class=''>     
   <%= render :partial => 'chart',:collection => @form.fields,:as => :field,:locals => {:count => true} %>                                                                                        
   </div>
 </div>
