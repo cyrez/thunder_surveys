@@ -36,7 +36,7 @@ class SessionsController < ApplicationController
   
   def set_lang
     lang = params[:locale]
-    session[:locale] = ['en', 'zh-CN', 'zh-TW'].include?(lang) ? lang : 'en'
+    session[:locale] = ['en', 'zh-CN', 'zh-TW', 'de'].include?(lang) ? lang : 'en'
     redirect_to :back
   end
 

@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     success = @user && @user.save
     if success && @user.errors.empty?
       # set first user as admin
-      #@user.roles << Role.find_or_create_by_title('superuser') if User.count == 1
+      @user.roles << Role.new(:title => 'superuser') if User.count == 1
       @user.activate!
       redirect_to(login_url)
       flash[:notice] = t(:create_success)

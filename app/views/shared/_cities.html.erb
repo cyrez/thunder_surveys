@@ -8,7 +8,7 @@
   <tbody> 
     <% cities.each do |c| %> 
     <tr>
-      <td class='text-center'><%=c['city'] || Unknown' %></td>
+      <td class='text-center'><%=c['city'] || 'Unknown' %></td>
       <td class='text-center'><%=c['count'].to_i%></td>
     </tr>
     <% end %>

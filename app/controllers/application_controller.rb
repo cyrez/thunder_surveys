@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
 
   def set_time_zone_and_locale
     Time.zone = current_user.time_zone if logged_in?    
-    I18n.locale = session[:locale] || 'en'
+    I18n.locale = session[:locale] || I18n.default_locale
   end
   
   def set_section(section)
