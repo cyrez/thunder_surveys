@@ -14,7 +14,7 @@ class Admin::UsersController < Admin::BaseController
     
     @user.destroy
     respond_to do |wants|
-      wants.html { redirect_to admin_users_url,:notice => '删除成功' }
+      wants.html { redirect_to admin_users_url,:notice => 'destroyed' }
     end
   end    
   

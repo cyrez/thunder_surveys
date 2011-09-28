@@ -25,7 +25,7 @@ class Admin::PagesController < Admin::BaseController
     @page.update_attributes(params[:page])         
     
     respond_to do |wants|      
-      wants.html { redirect_to admin_pages_url,:notice => '已保存' }
+      wants.html { redirect_to admin_pages_url,:notice => 'updated' }
     end
   end
   

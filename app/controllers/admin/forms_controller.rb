@@ -15,7 +15,7 @@ class Admin::FormsController < Admin::BaseController
      
      respond_to do |wants|
        if @form.save
-         flash[:notice] = '操作成功'
+         flash[:notice] = 'Successful'
        else
          flash[:alert] = 'Something Wrong'  
        end                                                                    
@@ -35,7 +35,7 @@ class Admin::FormsController < Admin::BaseController
       }                   
       else
       wants.html {
-        redirect_to admin_forms_path,:alert => '此问卷暂无回应'
+        redirect_to admin_forms_path,:alert => 'alert'
       }
       end
     end
@@ -46,7 +46,7 @@ class Admin::FormsController < Admin::BaseController
     Form.delete(@form._id) if @form
     
     respond_to do |format|
-      format.html { redirect_to(admin_forms_url,:notice => '已删除') }
+      format.html { redirect_to(admin_forms_url,:notice => 'destroyed') }
     end
   end
 end
