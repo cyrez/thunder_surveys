@@ -13,8 +13,9 @@ gem "googlecharts"
 gem "oauth"
 gem "json"
 gem "nokogiri"            
+gem "jrails"
 
 gem "ekuseru"
 gem "fastercsv"
-gem "heroku"
+#gem "heroku"
 gem 'dalli'
